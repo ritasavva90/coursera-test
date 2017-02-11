@@ -1,0 +1,89 @@
+html{
+	height: 100%;
+}
+
+* { 
+box-sizing: border-box; 
+}
+
+body{
+	font-family: arial;
+}
+
+h1 {
+text-align: center;
+font-family: Arial;
+
+}
+
+.title {
+position: absolute;
+top: 0;
+right: 0;
+border: 2px solid black;
+font-size: 1.25em;
+}
+
+#Section1, #Section2, #Section3 {
+padding: 10px;
+}
+
+#Section1 .content, #Section2 .content, #Section3 .content {
+font-size: 1em;
+width: auto;
+height: auto;
+background-color: lightgray;
+position: relative;
+border:1px solid black;
+padding-top: 10px;
+overflow: auto;
+}
+ 
+#Section1 .title {
+background-color: pink;
+color: black;
+}
+
+#Section2 .title {
+background-color: red;
+color: white;
+}
+#Section3 .title {
+background-color: yellow;
+color: black;
+}
+
+
+@media (min-width: 992px) {
+ /* For desktop: */
+ #Section1, #Section2, #Section3 {
+    float: left;
+    position: auto;
+  }
+    #Section1 {width: 33.33%;}
+    #Section2 {width: 33.33%;}
+    #Section3 {width: 33.33%;}
+   
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+ /* For tablets: */
+  #Section1, #Section2, #Section3 {
+  	float: left;
+    position: auto;
+  }
+   
+    #Section1 {width: 50%;}
+    #Section2 {width: 50%;}
+    #Section3 {width: 100%;}
+}
+
+	
+@media (max-width: 767px) {
+ /* For mobile: */
+#Section1, #Section2, #Section3 { 
+	float: left;
+	width: 100%;
+  }
+       
+}
